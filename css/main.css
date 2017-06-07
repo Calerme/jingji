@@ -52,9 +52,18 @@ ul.menu > li.active {
 }
 ul.menu > li, ul.submenu > li {
     display: table-cell;
-    width: 25%;
+    width: 50%;
     font-weight: bold;
 }
+
+/* only css */
+ul.submenu > li {
+    width: 30%
+}
+ul.submenu > li:nth-of-type(3) {
+    width: 40%;
+}
+
 ul.menu > li + li, ul.submenu > li + li {
     padding: 1rem;
     border-left: .1rem solid #eee;
@@ -109,7 +118,7 @@ iframe {
 section h3 {
     display: inline-block;
     width: 8em;
-    height: 6rem;
+    height: 7rem;
     line-height: 1.5;
     margin: 0;
     /*padding: 2rem 0;*/
